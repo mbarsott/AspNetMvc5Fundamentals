@@ -20,6 +20,8 @@ namespace Identity.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Movie> Movies { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -29,5 +31,11 @@ namespace Identity.Models
         {
             return new ApplicationDbContext();
         }
+    }
+
+    public class Movie
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
     }
 }
