@@ -30,6 +30,20 @@
         </div>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                @* <ul class="nav nav-pills nav-stacked"> *@
+                @* <ul class="breadcrumb"> *@
+                <ul class="pagination">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="active">@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+
+
         @RenderBody()
         <hr />
         <footer>
