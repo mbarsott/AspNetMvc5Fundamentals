@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientData", "PatientData\PatientData.csproj", "{A5C05E1F-0285-4855-BE02-72FE47E2E859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorsClient", "CorsClient\CorsClient.csproj", "{2F90217B-D085-453A-B79F-0244D5779B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spa", "Spa\Spa.csproj", "{F274A80D-367F-42A5-871F-DA8D13FE923F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5C05E1F-0285-4855-BE02-72FE47E2E859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C05E1F-0285-4855-BE02-72FE47E2E859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C05E1F-0285-4855-BE02-72FE47E2E859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C05E1F-0285-4855-BE02-72FE47E2E859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F90217B-D085-453A-B79F-0244D5779B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F90217B-D085-453A-B79F-0244D5779B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F90217B-D085-453A-B79F-0244D5779B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F90217B-D085-453A-B79F-0244D5779B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F274A80D-367F-42A5-871F-DA8D13FE923F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F274A80D-367F-42A5-871F-DA8D13FE923F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F274A80D-367F-42A5-871F-DA8D13FE923F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F274A80D-367F-42A5-871F-DA8D13FE923F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58A7DC06-993B-46A3-9525-5E865B47FB1E}
+	EndGlobalSection
+EndGlobal
