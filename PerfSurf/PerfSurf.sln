@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerfSurf", "PerfSurf\PerfSurf.csproj", "{D0E604F8-A315-466D-B602-EBBBB4FF0E7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0E604F8-A315-466D-B602-EBBBB4FF0E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E604F8-A315-466D-B602-EBBBB4FF0E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E604F8-A315-466D-B602-EBBBB4FF0E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E604F8-A315-466D-B602-EBBBB4FF0E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1180D4B6-EA76-42C3-9E2D-C507ED6B6FBE}
+	EndGlobalSection
+EndGlobal
