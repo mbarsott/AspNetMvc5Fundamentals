@@ -45,6 +45,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Glimpse.Ado, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.Ado.1.7.3\lib\net45\Glimpse.Ado.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.AspNet, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.AspNet.1.8.0\lib\net45\Glimpse.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Core, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.1.8.6\lib\net45\Glimpse.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.EF6, Version=1.6.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.EF6.1.6.5\lib\net45\Glimpse.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Mvc5, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.Mvc5.1.5.3\lib\net45\Glimpse.Mvc5.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -168,12 +183,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Books2Controller.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DataContexts\BookMigrations\201905102038044_InitialCreate.cs" />
     <Compile Include="DataContexts\BookMigrations\201905102038044_InitialCreate.Designer.cs">
       <DependentUpon>201905102038044_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\BookMigrations\201905121455462_DefaultSchema.cs" />
+    <Compile Include="DataContexts\BookMigrations\201905121455462_DefaultSchema.Designer.cs">
+      <DependentUpon>201905121455462_DefaultSchema.cs</DependentUpon>
     </Compile>
     <Compile Include="DataContexts\BookMigrations\Configuration.cs" />
     <Compile Include="DataContexts\BooksDb.cs" />
@@ -182,7 +202,16 @@
     <Compile Include="DataContexts\IdentityMigrations\201905102035245_InitialCreate.Designer.cs">
       <DependentUpon>201905102035245_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201905121459340_DefaultSchema.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201905121459340_DefaultSchema.Designer.cs">
+      <DependentUpon>201905121459340_DefaultSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201905121501304_DefaultSchema1.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201905121501304_DefaultSchema1.Designer.cs">
+      <DependentUpon>201905121501304_DefaultSchema1.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContexts\IdentityMigrations\Configuration.cs" />
+    <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -253,6 +282,11 @@
     <Content Include="Views\Books\Details.cshtml" />
     <Content Include="Views\Books\Edit.cshtml" />
     <Content Include="Views\Books\Index.cshtml" />
+    <Content Include="Views\Books2\Create.cshtml" />
+    <Content Include="Views\Books2\Delete.cshtml" />
+    <Content Include="Views\Books2\Details.cshtml" />
+    <Content Include="Views\Books2\Edit.cshtml" />
+    <Content Include="Views\Books2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -280,8 +314,17 @@
     <EmbeddedResource Include="DataContexts\BookMigrations\201905102038044_InitialCreate.resx">
       <DependentUpon>201905102038044_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\BookMigrations\201905121455462_DefaultSchema.resx">
+      <DependentUpon>201905121455462_DefaultSchema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataContexts\IdentityMigrations\201905102035245_InitialCreate.resx">
       <DependentUpon>201905102035245_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201905121459340_DefaultSchema.resx">
+      <DependentUpon>201905121459340_DefaultSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201905121501304_DefaultSchema1.resx">
+      <DependentUpon>201905121501304_DefaultSchema1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

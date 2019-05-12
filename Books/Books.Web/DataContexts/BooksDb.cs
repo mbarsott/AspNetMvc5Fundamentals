@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using System.Diagnostics;
 using Books.Entities;
 
 namespace Books.Web.DataContexts
@@ -7,8 +8,15 @@ namespace Books.Web.DataContexts
     {
         public BooksDb() : base("DefaultConnection")
         {
-
+            Database.Log = sql => Debug.Write(sql);
         }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("libary");
+            base.OnModelCreating(modelBuilder);
+        }
+
         public DbSet<Book> Books { get; set; }
     }
 }
